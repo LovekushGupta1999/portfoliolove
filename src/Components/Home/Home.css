@@ -1,0 +1,128 @@
+.home{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.lefthome{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.homedetails{
+ font-size: 2vmax;
+}
+
+.line1{
+    font-size: .8em;
+}
+.line2{
+    font-size: 2em;
+    background: linear-gradient(to right,rgb(68, 147, 199), white);
+   background-clip: text; 
+   color: transparent;
+
+}
+.line3{
+    font-size: 1em;
+}
+
+
+.circle_div{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    margin-top: 15px;
+}
+.circleO{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* background-color: #b47aea; */
+    box-shadow: 2px 2px 20px #7ad7ea ;
+}
+.righthome{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.righthome .imgsection {
+    width: 55%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
+    border-radius:100% ;
+    overflow: hidden;
+}
+
+.righthome .imgsection img{
+    width: 89%;
+    filter: drop-shadow(2px 2px 20px rgb(116,201,225)   );
+}
+
+.homedetails button{
+    padding: 10px 30px;
+    background-color: rgb(66,180,205);
+    color: black;
+    border: 2px solid rgb(66,180,205);
+    margin-top: 30px;
+    border-radius: 20px;
+    font-family: 19px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.homedetails button:hover{
+    background-color: transparent;
+    color: rgb(66,180,205);
+}
+
+/* ------------------------------------media quary------------------------------- */
+@media (max-width:1025px){
+    .righthome .imgsection {
+        width: 280px;
+        height: 48vh;
+    }
+}
+@media (max-width:750px){
+    .home{
+        flex-direction: column-reverse;
+    }
+    .lefthome{
+        width: 100%;
+        height: 50vh;
+    }
+    .righthome{
+        width: 100%;
+        height: 50vh;
+        align-items: end;
+    }
+    .righthome .imgsection {
+        width: 220px;
+        height: 37vh;
+    }
+}
+
+@media (max-width:360px){
+    .righthome .imgsection {
+        width: 190px;
+        height: 25vh;
+    }
+}

@@ -1,0 +1,172 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imga);
+    overflow: hidden;
+}
+
+.contact img {
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+}
+
+.contact h1 {
+    font-size: 3.5vmax;
+    background: linear-gradient(to right, rgb(250, 3, 127), white);
+    background-clip: text;
+    color: transparent;
+    margin-top: 0;
+    padding-top: 40px;
+}
+
+.contact .contactinput {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftcontact {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftcontact .imgsect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftcontact .imgsect img {
+    filter: drop-shadow(2px 2px 10px rgb(97, 186, 220));
+    width: 30%;
+}
+
+.rightcontact {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightcontact .form {
+    display: flex;
+    width: 60%;
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    color: white;
+    border: 2px solid green;
+    box-shadow: 2px 2px 20px rgb(210, 144, 145);
+}
+
+.rightcontact .form .inp-group {
+    padding: 10px;
+}
+
+.rightcontact .form .inp-group input {
+    width: 75%;
+    min-width: 170px;
+    padding: 0 10px;
+    height: 25px;
+    border-radius: 6px;
+    background: rgb(0, 0, 0);
+    box-shadow: 2px 2px 20px rgb(86, 97, 61);
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+}
+
+#message1 {
+    padding: 10px;
+    line-height: 1.5;
+    width: 92%;
+    min-width: 170px;
+    height: 130px;
+    background: black;
+    outline: none;
+    color: #fff;
+}
+
+.form button {
+    padding: 10px 30px;
+    background-color: rgb(66, 180, 205);
+    color: black;
+    border: 2px solid rgb(66, 180, 205);
+    border-radius: 20px;
+    font-family: 19px;
+    transition: all 0.2s;
+    cursor: pointer;
+    width: 140px;
+}
+
+.form button:hover {
+    background-color: transparent;
+    color: rgb(66, 180, 205);
+}
+
+@media (max-width: 750px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .contact .contactinput {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .leftcontact, .rightcontact {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftcontact {
+        margin-top: 20px;
+    }
+
+    .leftcontact .imgsect img {
+        width: 100%;
+    }
+
+    .rightcontact .form {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .leftcontact .imgsect img {
+        width: 60%;
+        display: none;
+    }
+    .leftcontact,.rightcontact{
+        height: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .contact h1 {
+        font-size: 4vmax;
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+
+    .rightcontact .form {
+        width: 90%;
+    }
+}
