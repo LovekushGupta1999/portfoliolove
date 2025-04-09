@@ -55,6 +55,9 @@ nav ul a:hover{
     color: rgb(66,180,205);
     scale: 1.1;
 }
+.desktopmenu button a{
+    text-decoration: none;
+}
 
 .hamburger{
     cursor: pointer;

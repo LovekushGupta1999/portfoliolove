@@ -3,6 +3,8 @@ import './Navbar.css'
 import {Link} from 'react-scroll'
 import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
+// import Cv from '../../assets/MYCV/Lovekush Gupta (2).pdf'
+
 function Navbar() {
     let mobile=useRef()
     let menu=useRef()
@@ -35,7 +37,7 @@ function Navbar() {
                <Link to='about' smooth={true} activeClass='active' spy={true} duration={500}> <li>About</li></Link>  
                <Link to='project' smooth={true} activeClass='active' spy={true} duration={500}> <li>Project</li></Link>
                <Link to='contact' smooth={true} activeClass='active' spy={true} duration={500}> <li>Contact</li></Link>
-               <button className='down'>DOWNLOAD</button>
+               <button className='down' ><a href="../../../public/MYCV/mycv.pdf" download>DOWNLOAD</a></button>
             </ul>
             <div className='hamburger' ref={menu} onClick={()=>{
                 mobile.current.classList.toggle("activemobile")
